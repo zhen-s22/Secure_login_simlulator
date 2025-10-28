@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/css/style.css"> 
+<title>Sign in</title>
+</head>
+<body>
+
+<div class="signin">
+
+    <div class="row">
+        <h1 class="Header">Sign in</h1>
+        <button class="button">
+            <span class="closebnt" id="closebnt">&#10005;</span>
+        </button>
+    </div>
+    
+    <p class="subheader">Become a member — don't miss out on deals, offers, discounts and bonus vouchers.</p><br>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alerting_message {{ category }}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <br> 
+
+  
+
+
+   <form method="POST" id="loginForm" action="{{ url_for('index') }}">
+      {{ form.hidden_tag() }}
+
+      <label for="email">Email <font color="red">*</font></label>
+      {{ form.email(type="email",id="email", autocomplete="email") }}
+      {% for error in form.email.errors %}
+        <div class="error">{{ error }}</div>
+      {% endfor %}
+
+      <label for="password">Password <font color="red">*</font></label>
+      <div class="show">
+        {{ form.password(id="password", class="password-input") }}
+        <span> SHOW </span>
+      </div>
+      
+      
+
+
+      {% for error in form.password.errors %}
+        <div class="error">{{ error }}</div>
+      {% endfor %}
+
+      <br>
+      <div class="row">
+        <label class="remember"><input type="checkbox"> Remember me </label>
+        <a href="#" class="forgotpsswd">Forgot password?</a>
+      </div>
+
+      <br>
+      {{ form.submit(class="sign", id="signInBtn") }}
+
+      <div>
+        <a href="{{ url_for('Signup') }}"><input class="become_member" type="button" value="Become a member"></a>
+      </div>
+
+      {% if error %}
+        <div class="error">{{ error }}</div>
+      {% endif %}
+    </form>
+
+
+</div>
+
+
+
+
+<!-- 
+<script src="/static/validation.js"></script>
+-->
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="edit_profile">
+<head>
+<link rel="stylesheet" href="/static/css/style.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/c421853c0e.js" crossorigin="anonymous"></script>
+<title>Dashboard</title>
+</head>
+<body>
+
+
+<div class="side_nav">
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fa fa-dashboard"></i>&#9; Dashboard</a></li>
+      <li><a href="#"><i class="fa fa-heart-o"></i>&#9; Favorites</a></li>
+      <li><a href="#"> <i class="fa fa-gear"> </i>&#9; Setting</a></li>
+      <li><a href="#"><i class="fa fa-bell-o"></i>&#9; Notification</a></li>
+
+      <li class="subNav-item">
+        <a href="#"><i class="fa fa-user-o"></i>&#9; Profile </i></a>
+
+        <div class="subNav-content">
+          <a href="#"><i class="fa-solid fa-user-pen"></i> &#9; Edit Profile </a>
+          <a href="#"><i class="fa-solid fa-shield-halved"></i> &#9; Security</a>
+        </div>
+      </li>
+  
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <li><a href="{{url_for('logout')}}"><i class="fa-solid fa-arrow-right-from-bracket"></i>&#9; Logout</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="top_nav">
+  <h2>Edit Profile</h2>
+
+  <div class="right_section">
+    <a href="#"><i class="fa fa-bell-o"></i></a>
+    <div class="avatar_container">
+      <img class="avatar" src="https://www.w3schools.com/w3images/avatar6.png" alt="Avatar">
+    </div>
+  </div>
+</div>
+
+  
+
+  
+</div>
+
+<div class="info_bar">
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">FAQ</a></li>
+</div> 
+  
+<div class="profile" >
+  <img src="https://www.w3schools.com/w3images/avatar6.png" alt="User Profile">
+  <i class="fa-solid fa-pencil"></i>
+</div>
+
+
+    
+<div class="content">
+
+  <form id="display_user_info">
+
+    <label for="First_Name_no_B" > Full Name </label>
+    <input type="First_Name_no_B" id="First_Name_no_B" autocomplete="given-name" value="{{user.first_name}} {{user.last_name}}" required>
+    
+    <label for="email_no_B"> Email </label>
+    <input type="email_no_B" id="email_no_B" autocomplete="email" value="{{user.email}}" readonly>
+
+    <label for="phone">Number</label>
+    <input type="tel_no_B" id="phone"  pattern="[0-9]{10}" autocomplete="tel" value="{{user.phone}}" required>
+
+    <label for="City">City</label>
+    <input type="city" id="city">
+    
+    
+    <div class="Two_inputs">
+      <div class="state">
+        <label>State  </label>
+        <input type="state" id="state">
+      </div>
+
+      <div class="zip">  
+        <label >Code </label>
+        <input type="zip" id="zip">
+      </div>
+        
+
+    </div>
+
+    <label for="country">Country</label>
+    <input type="country" id="country" >
+
+    
+    <div class="row">
+      <input type="submit" class="bnt" id="signInBtn" value="Back to Home">
+      <input type="submit" class="btn_color" id="signInBtn" value="Save Changes ">  
+    </div>
+
+  </form>
+</div>
+
+
+
+
+</body>
+</html>
+
