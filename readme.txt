@@ -15,7 +15,7 @@ a secure user authentication system. It allows users to:
 
 1. Clone the repository
    --------------------
-   git clone https://github.com/zhen-s22/Secure-Login-Simulation.git
+   git clone https://github.com/zhen-s22/Secure_login_simlulator.git
    cd Secure-Login-Simulation
 
 
@@ -104,4 +104,4 @@ into your Vercel dashboard.
 ------------------------------------------------------------
 
 Developed by: Zhen Yu / zhen-s22
-GitHub: https://github.com/zhen-s22/Secure-Login-Simulation
+GitHub: https://github.com/zhen-s22/Secure_login_simlulator
