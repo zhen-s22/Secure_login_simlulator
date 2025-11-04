@@ -18,6 +18,9 @@ a secure user authentication system. It allows users to:
 #### 1. Clone the repository
 
    git clone https://github.com/zhen-s22/Secure_login_simlulator.git
+   or
+   git clone https://github.com/Zenefu/Secure_login_simlulator.git
+   
    cd Secure-Login-Simulation
 
 #### 2. Create a virtual environment
