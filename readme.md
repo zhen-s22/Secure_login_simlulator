@@ -59,15 +59,15 @@ a secure user authentication system. It allows users to:
  ###                   PROJECT STRUCTURE
 
 Secure-Login-Simulation/
-│
-├── static/             → Static files (CSS, images)
-├── templates/          → HTML templates (login, signup, dashboard)
-├── instance/           → Contains the SQLite database
-│   └── database.db
-├── app.py              → Main Flask app file
-├── create_db.py        → Script to initialize the database
-├── requirements.txt    → Python dependencies
-└── README.txt          → Project info (this file)
+├─ static/          # CSS, images
+├─ templates/       # HTML templates (login, signup, dashboard)
+├─ instance/        # SQLite data
+│  └─ database.db
+├─ app.py           # Main Flask app
+├─ create_db.py     # DB initializer script
+├─ requirements.txt # Python dependencies
+└─ README.txt       # Project info
+
 
 
 
