@@ -1,7 +1,7 @@
 ### This is a little project done during my intern at solution22
 
 ------------------------------------------------------------
-                 SECURE LOGIN SIMULATION
+ ###                SECURE LOGIN SIMULATION
 ------------------------------------------------------------
 
 This is a simple Flask web application that demonstrates
@@ -12,16 +12,18 @@ a secure user authentication system. It allows users to:
 - Access a protected dashboard once logged in
 
 ------------------------------------------------------------
-                 HOW TO RUN THE WEB APP
+###                 HOW TO RUN THE WEB APP
 ------------------------------------------------------------
 
-1. Clone the repository
-   --------------------
+#### 1. Clone the repository
+---------------------------------------------------------------------
    git clone https://github.com/zhen-s22/Secure_login_simlulator.git
+---------------------------------------------------------------------
+---------------------------------------------------------------------
    cd Secure-Login-Simulation
+---------------------------------------------------------------------
 
-
-2. Create a virtual environment
+#### 2. Create a virtual environment
    -----------------------------
    python -m venv venv
 
