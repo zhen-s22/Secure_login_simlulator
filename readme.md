@@ -1,8 +1,8 @@
 ### This is a little project done during my intern at solution22
 
 
- ###                SECURE LOGIN SIMULATION
-------------------------------------------------------------
+ #                SECURE LOGIN SIMULATION
+
 
 This is a simple Flask web application that demonstrates
 a secure user authentication system. It allows users to:
@@ -13,7 +13,7 @@ a secure user authentication system. It allows users to:
 
 
 ###                 HOW TO RUN THE WEB APP
-------------------------------------------------------------
+
 
 #### 1. Clone the repository
 ---------------------------------------------------------------------
@@ -24,7 +24,7 @@ a secure user authentication system. It allows users to:
 ---------------------------------------------------------------------
 
 #### 2. Create a virtual environment
-   -----------------------------
+
    python -m venv venv
 
    Activate the virtual environment:
@@ -34,20 +34,20 @@ a secure user authentication system. It allows users to:
        source venv/bin/activate
 
 
-3. Install dependencies
-   ---------------------
+#### 3. Install dependencies
+
    Make sure you have a requirements.txt file, then run:
        pip install -r requirements.txt
 
 
-4. Initialize the database
-   ------------------------
+#### 4. Initialize the database
+
    If the database does not exist yet, run:
        python create_db.py
 
 
-5. Run the app
-   ------------
+#### 5. Run the app
+
    Option 1:
        flask run --debug
 
@@ -58,9 +58,8 @@ a secure user authentication system. It allows users to:
        http://127.0.0.1:5000
 
 
-------------------------------------------------------------
-                    PROJECT STRUCTURE
-------------------------------------------------------------
+
+ ###                   PROJECT STRUCTURE
 
 Secure-Login-Simulation/
 │
@@ -74,9 +73,9 @@ Secure-Login-Simulation/
 └── README.txt          → Project info (this file)
 
 
-------------------------------------------------------------
-                 OPTIONAL: DEPLOY ON VERCEL
-------------------------------------------------------------
+
+ ####                OPTIONAL: DEPLOY ON VERCEL
+
 
 To deploy on Vercel, create a file named vercel.json
 in your project root with the following content:
@@ -90,9 +89,7 @@ Then push your code to GitHub and import the repository
 into your Vercel dashboard.
 
 
-------------------------------------------------------------
-                        REQUIREMENTS
-------------------------------------------------------------
+ ###                       REQUIREMENTS
 
 - Python 3.8 or higher
 - Flask
@@ -103,9 +100,7 @@ into your Vercel dashboard.
 - python-dotenv
 
 
-------------------------------------------------------------
-                           AUTHOR
-------------------------------------------------------------
+ ###                          AUTHOR
 
 Developed by: Zhen Yu / zhen-s22
 GitHub: https://github.com/zhen-s22/Secure_login_simlulator
